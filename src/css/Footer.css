@@ -1,0 +1,26 @@
+footer{
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    height: auto;
+    width: 100%;
+}
+
+.ul-footer{
+    list-style-type: none;
+    margin-left: -16px;
+    text-align: left;
+    margin: 20px;
+}
+.image-footer{
+    align-self: center;
+    width: 200px;
+    margin-top: 50px;
+}
+.button-footer{
+    list-style-type: none;
+    margin-left: -16px;
+    text-align: left;
+    background-color: white;
+    
+}

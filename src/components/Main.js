@@ -6,10 +6,12 @@ import ReviewCard from "./ReviewCard";
 import Salad from "../images/greek salad.jpg";
 import Bruchetta from "../images/bruchetta.svg";
 import Cake from "../images/lemon dessert.jpg";
-import Connor from "../images/connor.png"
-import John from "../images/john.jpg"
-import Bruce from "../images/brucelee_cahalloffameinductee-1.png"
-import Steven from "../images/steven-stamkos-2020-55.jpg"
+import Connor from "../images/connor.png";
+import John from "../images/john.jpg";
+import Bruce from "../images/brucelee_cahalloffameinductee-1.png";
+import Steven from "../images/steven-stamkos-2020-55.jpg";
+import Owners from "../images/Mario and Adrian A.jpg";
+import Resto from "../images/restaurant.jpg";
 
 const Main = () => {
   return (
@@ -19,13 +21,13 @@ const Main = () => {
           <h2>Little Lemon</h2>
           <h3>Chicago</h3>
           <p>
-            We are a family owned Mediterraneran restaurant, focused on
+            We are a family owned Mediterranean restaurant, focused on
             traditional recipes servred with a modern twist.
           </p>
           <button className="button-reserve">Reserve Table</button>
         </div>
         <div className="image-container">
-          <img className="main-img" src={food1} />
+          <img className="main-img" src={food1} alt="food" />
         </div>
       </section>
       <section className="section2">
@@ -76,8 +78,24 @@ const Main = () => {
             imageSrc={Steven}
             name="Steven Stamkos"
             rating="5"
-            review='"Greek salade was great"'
+            review='"Greek salad was great"'
           />
+        </div>
+      </section>
+      <section className="section4">
+        <div className="info2">
+          <h2>Little Lemon</h2>
+          <h3>Chicago</h3>
+          <p>
+            Proident Lorem culpa ad officia ullamco id ut ea nisi magna
+            adipisicing anim anim. Do amet ad tempor ipsum aute velit sit nisi
+            pariatur non consequat ex Lorem ex. Id aliquip irure quis nostrud.
+            Veniam minim dolore consequat anim voluptate nisi nulla cupidatat.{" "}
+          </p>
+        </div>
+        <div className="image-contianer2">
+          <img src={Owners} id="chefs" alt="Chefs" className="image" />
+          <img src={Resto} id="resto" alt="Resto" className="image" />
         </div>
       </section>
     </main>
