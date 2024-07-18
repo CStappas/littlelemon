@@ -1,0 +1,36 @@
+/* Basic styling for the header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: white;
+  position: relative;
+  height: 90px;
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px; /* Adjust this value as needed */
+  padding-right: 30px;
+}
+
+/* Hide the menu toggle by default */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}

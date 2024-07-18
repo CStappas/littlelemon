@@ -1,0 +1,67 @@
+/* index.css or App.css */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+
+
+.image-container {
+    position: relative; /* Ensure relative positioning context for absolute child */
+    width: 800px;
+    height: 420px; /* Example height for the container */
+  }
+  .main-img {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: none; /* Allow the image to exceed its original width */
+    height: 420px; /* Maintain aspect ratio */
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.411);
+  }
+.section1{
+    display: flex;
+    height: 420px;
+    background-color: #495E57;
+    }
+.section2 {
+    display: flex;
+    height: auto;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+h1{
+    margin: 1em 5em 1em 1em;
+    font-size: 60px;
+    
+}
+
+.info{
+    text-align: left;
+    padding-left: 23%;
+}
+h2,h3, p {
+    text-align: left;
+    width: 400px;
+}
+h2{
+    color: #f4ce14;
+    font-size: 46px;
+}
+button{
+    padding: 20px 40px;
+    border-radius: 40px;
+    background-color: #f4ce14;
+    font-weight: 800;
+    border: none;
+    font-family: "Karla";
+    font-size: 18px;
+    transition: transform 0.3s;
+
+}
+button:hover{
+    transform: translateY(-5px);
+}
