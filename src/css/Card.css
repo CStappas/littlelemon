@@ -45,4 +45,12 @@
 }
 .button2 {
   background-color: white;
+  border: 1px;
+  border-style: solid;
+}
+
+@media (max-width: 768px){
+    .section2{
+      flex-direction: column;
+    }
 }

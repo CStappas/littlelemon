@@ -60,7 +60,7 @@ button {
 button:hover {
   transform: translateY(-5px);
 }
-.info2, h2 {
+.info2 {
     color: black;
 }
 .section4 {
@@ -73,12 +73,12 @@ button:hover {
 .image-container2 {
   border: 1px solid #ccc; /* Optional: border for visibility */
   position: relative;
-  width: 350px; /* Adjust width as needed */
+  max-width: 350px; /* Adjust width as needed */
   height: auto; /* Adjust height as needed */
 }
 .image {
   position: absolute;
-  width: 350px; /* Adjust width as needed */
+  max-width: 350px; /* Adjust width as needed */
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -95,3 +95,38 @@ button:hover {
   left: -100px; /* Adjust as needed for the desired overlap */
   z-index: 1; /* Ensure this image is above the first image */
 }
+
+/* Media Queries for additional responsiveness */
+@media (max-width: 768px) {
+    .main-img{
+      height: 0px;
+    }
+    .section1{
+      flex-direction: column;
+      height: 250px;
+    }
+    .section4{
+      flex-direction: column;
+      justify-content: space-around
+    }
+    .image-container {
+      width: 90%;
+    }
+    .image{
+    width: 50%;
+    }
+    h1 {
+      font-size: 6vw; /* Increase relative size for smaller screens */
+      margin: 1em;
+    }
+    h2 {
+      font-size: 5vw; /* Increase relative size for smaller screens */
+    }
+    .info {
+      padding-left: 10%;
+    }
+    button {
+      padding: 0.5em 1em;
+      font-size: 0.9em;
+    }
+  }

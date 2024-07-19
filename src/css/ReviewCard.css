@@ -1,80 +1,106 @@
-
-
 .review-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 231px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Center content horizontally */
-    text-align: center;  /* Center text inside the content */
-    margin: 2em;
-    background-color: aliceblue;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 231px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text inside the content */
+  margin: 2em;
+  background-color: aliceblue;
+}
 
-  }
-  
-  .review-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .review-image {
-    width: 100px; /* Set the desired width */
-    height: 100px; /* Maintain aspect ratio */
-    border-radius: 50%; /* Optional: make the image circular */
-    margin-top: 16px; /* Add some margin at the top */
-    object-fit: cover;
-  }
-  
-  .review-content {
-    width: 100px;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-  }
-  
-  .review-name {
-    font-size: 1.25em;
-    margin: 16px 0 8px 0; /* Add margin at the top */
-    text-align: center;
-  }
-  
-  .review-rating {
-    font-size: 1em;
-    color: #555;
-    margin: 0 0 8px 0;
-  }
-  
-  .review-text {
-    font-size: 1em;
-    color: #555;
-    margin: 0;
-    word-wrap: break-word; /* Ensure text wraps properly */
-    text-align: center;
-  }
-  
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-image {
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: make the image circular */
+  margin-top: 16px; /* Add some margin at the top */
+  object-fit: cover;
+}
+
+.review-content {
+  width: 100px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.review-name {
+  font-size: 1.25em;
+  margin: 16px 0 8px 0; /* Add margin at the top */
+  text-align: center;
+}
+
+.review-rating {
+  font-size: 1em;
+  color: #555;
+  margin: 0 0 8px 0;
+}
+
+.review-text {
+  font-size: 1em;
+  color: #555;
+  margin: 0;
+  word-wrap: break-word; /* Ensure text wraps properly */
+  text-align: center;
+}
+
 .section3 {
   justify-content: center;
   height: 500px;
-  background-color: #495E57;
- 
+  background-color: #495e57;
 }
-.testimonials{
-    font-family: 'Markazi Text';
-    justify-content: center;
-    margin: 0;
-    color: #f4ce14;
-    padding-top: 40px;
+.testimonials {
+  font-family: "Markazi Text";
+  justify-content: center;
+  margin: 0;
+  color: #f4ce14;
+  padding-top: 40px;
 }
-.review-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-
+.review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+  .review-card {
+    width: 100%; /* Full width on small screens */
+    margin: 1em 0; /* Adjust margin for responsiveness */
+  }
+
+  .review-content {
+    width: 100%; /* Full width on small screens */
+    padding: 8px; /* Adjust padding for responsiveness */
+  }
+
+  .review-image {
+    width: 80px; /* Smaller image size on small screens */
+    height: 80px; /* Maintain aspect ratio */
+  }
+
+  .section3 {
+    height: auto; /* Allow the section height to adjust */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  .testimonials {
+    font-size: 1.5em; /* Adjust font size for better readability */
+    padding-top: 20px; /* Adjust padding for better spacing */
+  }
+
+  .review-container {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center; /* Center content horizontally */
+  }
+}

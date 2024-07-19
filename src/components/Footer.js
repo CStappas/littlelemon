@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "../images/Logo .svg";
 import "../css/Footer.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 
 const Footer = () => {
   return (
@@ -12,7 +14,7 @@ const Footer = () => {
         <h5>Navigation</h5>
         <ul className="ul-footer">
           <li>
-            <button className="button-footer">Home</button>
+            <button className="button-footer"><AnchorLink href="">Home</AnchorLink></button>
           </li>
           <li>
             <button className="button-footer">About</button>

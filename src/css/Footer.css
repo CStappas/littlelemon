@@ -1,26 +1,52 @@
-footer{
-    justify-content: center;
-    display: flex;
-    list-style: none;
-    height: auto;
-    width: 100%;
+footer {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  padding: 20px; /* Add padding for spacing */
+  background-color: #f8f8f8; /* Optional: background color for visibility */
 }
 
-.ul-footer{
-    list-style-type: none;
-    margin-left: -16px;
-    text-align: left;
-    margin: 20px;
+.ul-footer {
+  list-style-type: none;
+  text-align: center;
 }
-.image-footer{
-    align-self: center;
-    width: 200px;
-    margin-top: 50px;
+
+.image-footer {
+  align-self: center;
+  width: 150px; /* Adjust width for responsiveness */
+  margin-top: 20px; /* Adjust margin for responsiveness */
 }
-.button-footer{
-    list-style-type: none;
-    margin-left: -16px;
-    text-align: left;
-    background-color: white;
-    
+
+.button-footer {
+  list-style-type: none;
+  margin: 2px;
+  text-align: center; /* Center text on small screens */
+  background-color: white;
+  padding: 5px 10px; /* Add padding for better clickability */
+  border-radius: 5px; /* Optional: rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Add transition for background color */
+}
+
+.button-footer:hover {
+  background-color: #e0e0e0; /* Change background color on hover */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row; /* Stack items horizontally on larger screens */
+    justify-content: space-around; /* Space items evenly */
+  }
+
+  .ul-footer,
+  .button-footer {
+    text-align: left; /* Align text to the left on larger screens */
+  }
+
+  .image-footer {
+    width: 200px; /* Increase width for larger screens */
+    margin-top: 0; /* Remove top margin for larger screens */
+  }
 }
