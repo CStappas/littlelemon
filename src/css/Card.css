@@ -48,7 +48,12 @@
   border: 1px;
   border-style: solid;
 }
+@media (max-width: 1010px){
+  .button2{
+   font-size: 14px;
+  }
 
+}
 @media (max-width: 768px){
     .section2{
       flex-direction: column;

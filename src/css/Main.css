@@ -61,7 +61,7 @@ button:hover {
   transform: translateY(-5px);
 }
 .info2 {
-    color: black;
+  color: black;
 }
 .section4 {
   display: flex;
@@ -96,37 +96,53 @@ button:hover {
   z-index: 1; /* Ensure this image is above the first image */
 }
 
-/* Media Queries for additional responsiveness */
-@media (max-width: 768px) {
-    .main-img{
-      height: 0px;
-    }
-    .section1{
-      flex-direction: column;
-      height: 250px;
-    }
-    .section4{
-      flex-direction: column;
-      justify-content: space-around
-    }
-    .image-container {
-      width: 90%;
-    }
-    .image{
-    width: 50%;
-    }
-    h1 {
-      font-size: 6vw; /* Increase relative size for smaller screens */
-      margin: 1em;
-    }
-    h2 {
-      font-size: 5vw; /* Increase relative size for smaller screens */
-    }
-    .info {
-      padding-left: 10%;
-    }
-    button {
-      padding: 0.5em 1em;
-      font-size: 0.9em;
-    }
+@media (max-width: 1100px) {
+  .button2 {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
   }
+  .section4 {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .main-img {
+    display: none;
+  }
+  .image-container {
+    display: none;
+  }
+  .section1 {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+  }
+  .section4 {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .image-container {
+    width: 90%;
+  }
+  .image {
+    width: 50%;
+  }
+  h1 {
+    font-size: 6vw; /* Increase relative size for smaller screens */
+    margin: 1em;
+  }
+  h2 {
+    font-size: 5vw; /* Increase relative size for smaller screens */
+  }
+  .info {
+    width: auto;
+    padding-left: 10%;
+    align-self: center;
+    word-wrap: break-word;
+  }
+  .button-reserve {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+}
