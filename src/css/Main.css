@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 
 .image-container {
-  position: relative; /* Ensure relative positioning context for absolute child */
+  position: relative;
   width: 800px;
-  height: 420px; /* Example height for the container */
+  height: 420px;
 }
 .main-img {
   position: absolute;
   bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
-  max-width: none; /* Allow the image to exceed its original width */
-  height: 420px; /* Maintain aspect ratio */
+  max-width: none;
+  height: 420px;
   border-radius: 20px;
   z-index: 1;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.411);
@@ -68,32 +68,32 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 500px;
-  background-color: #f0f0f0; /* Optional: background color for visibility */
+  background-color: #f0f0f0;
 }
 .image-container2 {
-  border: 1px solid #ccc; /* Optional: border for visibility */
+  border: 1px solid #ccc;
   position: relative;
-  max-width: 350px; /* Adjust width as needed */
-  height: auto; /* Adjust height as needed */
+  max-width: 350px;
+  height: auto;
 }
 .image {
   position: absolute;
-  max-width: 350px; /* Adjust width as needed */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 350px;
+  height: auto;
 }
 
 #chefs {
   position: relative;
   top: 40px;
   left: 100px;
-  z-index: 2; /* Ensure this image is below the second image */
+  z-index: 2;
 }
 
 #resto {
   position: relative;
-  top: -20px; /* Adjust as needed for the desired overlap */
-  left: -100px; /* Adjust as needed for the desired overlap */
-  z-index: 1; /* Ensure this image is above the first image */
+  top: -20px;
+  left: -100px;
+  z-index: 1;
 }
 
 @media (max-width: 1100px) {
@@ -129,11 +129,11 @@ button:hover {
     width: 50%;
   }
   h1 {
-    font-size: 6vw; /* Increase relative size for smaller screens */
+    font-size: 6vw;
     margin: 1em;
   }
   h2 {
-    font-size: 5vw; /* Increase relative size for smaller screens */
+    font-size: 5vw;
   }
   .info {
     width: auto;

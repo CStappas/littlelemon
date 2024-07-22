@@ -1,16 +1,14 @@
-/* Basic styling for the navigation bar */
 .nav-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 20px;
-
 }
 
 .list-item a {
   color: rgb(0, 0, 0);
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   padding: 10px;
   font-weight: 600;
 }
@@ -21,7 +19,6 @@
   border-radius: 5px;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -31,11 +28,11 @@
   .nav-list {
     flex-direction: column;
     width: 100%;
-    display: none; /* Hide the menu by default */
+    display: none;
   }
 
   .nav-list.active {
-    display: flex; /* Show the menu when active */
+    display: flex;
   }
 
   .list-item a {

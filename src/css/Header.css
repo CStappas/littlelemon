@@ -1,4 +1,4 @@
-/* Basic styling for the header */
+
 .header {
   display: flex;
   align-items: center;
@@ -17,11 +17,11 @@
 .logo {
   max-width: 100%;
   height: auto;
-  max-height: 50px; /* Adjust this value as needed */
+  max-height: 50px; 
   padding-right: 30px;
 }
 
-/* Hide the menu toggle by default */
+
 .menu-toggle {
   display: none;
   flex-direction: column;

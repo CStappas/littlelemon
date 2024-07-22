@@ -8,8 +8,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center content horizontally */
-  text-align: center; /* Center text inside the content */
+  align-items: center;
+  text-align: center;
   margin: 2em;
   background-color: aliceblue;
 }
@@ -19,10 +19,10 @@
 }
 
 .review-image {
-  width: 100px; /* Set the desired width */
-  height: 100px; /* Maintain aspect ratio */
-  border-radius: 50%; /* Optional: make the image circular */
-  margin-top: 16px; /* Add some margin at the top */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 16px;
   object-fit: cover;
 }
 
@@ -31,12 +31,12 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
+  align-items: center;
 }
 
 .review-name {
   font-size: 1.25em;
-  margin: 16px 0 8px 0; /* Add margin at the top */
+  margin: 16px 0 8px 0;
   text-align: center;
 }
 
@@ -50,7 +50,7 @@
   font-size: 1em;
   color: #555;
   margin: 0;
-  word-wrap: break-word; /* Ensure text wraps properly */
+  word-wrap: break-word;
   text-align: center;
 }
 
@@ -72,35 +72,35 @@
   justify-content: center;
 }
 
-/* Media Queries */
+
 @media (max-width: 768px) {
   .review-card {
-    width: 100%; /* Full width on small screens */
-    margin: 1em 0; /* Adjust margin for responsiveness */
+    width: 100%; 
+    margin: 1em 0; 
   }
 
   .review-content {
-    width: 100%; /* Full width on small screens */
-    padding: 8px; /* Adjust padding for responsiveness */
+    width: 100%;
+    padding: 8px;
   }
 
   .review-image {
-    width: 80px; /* Smaller image size on small screens */
-    height: 80px; /* Maintain aspect ratio */
+    width: 80px;
+    height: 80px;
   }
 
   .section3 {
-    height: auto; /* Allow the section height to adjust */
-    padding: 20px; /* Add padding for better spacing */
+    height: auto;
+    padding: 20px;
   }
 
   .testimonials {
-    font-size: 1.5em; /* Adjust font size for better readability */
-    padding-top: 20px; /* Adjust padding for better spacing */
+    font-size: 1.5em;
+    padding-top: 20px;
   }
 
   .review-container {
-    flex-direction: column; /* Stack cards vertically on small screens */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 }
