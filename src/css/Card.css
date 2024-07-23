@@ -52,6 +52,9 @@
   .button2{
    font-size: 14px;
   }
+  .card-text{
+    font-size: 14px;
+  }
 
 }
 @media (max-width: 768px){

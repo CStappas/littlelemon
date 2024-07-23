@@ -1,17 +1,56 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../css/Nav.css";
-import { Link } from 'react-router-dom';
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import Logo from "../images/Logo.svg";
 
 function Nav() {
+  const [hidden, setHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   return (
-    <nav className="nav" id="nav">
+    <nav className={`nav ${hidden ? "hidden" : ""}`} id="nav">
+      <div className="logo-container">
+        <img src={Logo} alt="Logo" className="logo" />
+      </div>
+
       <ul className="nav-list">
-        <li className="list-item"><Link to="/">Home</Link></li>
-        <li className="list-item"><AnchorLink href="#section4">About</AnchorLink></li>
-        <li className="list-item"><Link to="/booking">Reservation</Link></li>
-        <li className="list-item"><Link to="">Order Online</Link></li>
-        <li className="list-item"><Link to="">Login</Link></li>
+        <li className="list-item">
+          <HashLink to="/#header">Home</HashLink>
+        </li>
+        <li className="list-item">
+          <HashLink smooth to="/#section4">
+            About
+          </HashLink>
+        </li>
+        <li className="list-item">
+          <Link to="/booking">Reservation</Link>
+        </li>
+        <li className="list-item">
+          <HashLink smooth to="/#section2">
+            Order Online
+          </HashLink>
+        </li>
+        <li className="list-item">
+          <Link to="">Login</Link>
+        </li>
       </ul>
     </nav>
   );

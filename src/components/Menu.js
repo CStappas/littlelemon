@@ -7,7 +7,7 @@ import Card from './Card';
 export default function Menu() {
   return (
     <>
-    <section className="section2">
+    <section className="section2" id='section2'>
         <h1>Specials</h1>
         <button className="button-reserve">Online Menu</button>
       </section>

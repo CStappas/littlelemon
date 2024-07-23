@@ -78,7 +78,7 @@ button:hover {
 }
 .image {
   position: absolute;
-  max-width: 350px;
+  max-width: 300px;
   height: auto;
 }
 
@@ -104,6 +104,31 @@ button:hover {
   .section4 {
     padding: 20px;
   }
+}
+.image {
+  position: absolute;
+  max-width: 250px;
+  height: auto;
+}
+#chefs {
+  position: relative;
+  top: 40px;
+  left: 100px;
+  z-index: 2;
+}
+
+#resto {
+  position: relative;
+  top: -20px;
+  left: -100px;
+  z-index: 1;
+}
+.card-text {
+  font-size: 12px;
+}
+.section4 {
+  flex-direction: column;
+  justify-content: space-around;
 }
 @media (max-width: 768px) {
   .main-img {

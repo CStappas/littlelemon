@@ -1,26 +1,15 @@
 
 .header {
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 10px 20px;
   background-color: #ffffff;
   color: white;
-  position: relative;
-  height: 90px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 100px;
 }
-
-.logo-container {
-  flex-shrink: 0;
-}
-
-.logo {
-  max-width: 100%;
-  height: auto;
-  max-height: 50px; 
-  padding-right: 30px;
-}
-
 
 .menu-toggle {
   display: none;
