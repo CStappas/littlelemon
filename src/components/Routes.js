@@ -4,16 +4,16 @@ import {
   Routes,
 } from "react-router-dom";
 import BookingPage from "../components/BookingPage";
-import About from "../components/About";
+
 import Main from "../components/Main";
-import Homepage from "../components/Homepage";
-import Menu from "../components/Menu";
+
+import ConfirmedBooking from "./ConfirmedBooking";
 
 const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Main />} />
     <Route path="/booking" element={<BookingPage />} />
-    
+    <Route path="/confirmed" element={<ConfirmedBooking />}/>
   </Routes>
 );
 

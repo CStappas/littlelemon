@@ -1,7 +1,14 @@
 import React from 'react'
 import food1 from "../images/restauranfood.jpg";
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Homepage() {
+  const navigate = useNavigate();
+  
+  const goToAboutPage = () => {
+    navigate('/booking');
+  };
   return (
     <section className="section1">
         <div className="info">
@@ -11,7 +18,7 @@ export default function Homepage() {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes servred with a modern twist.
           </p>
-          <button className="button-reserve">Reserve Table</button>
+          <button className="button-reserve" onClick={goToAboutPage}>Reserve Table</button>
         </div>
         <div className="image-container">
           <img className="main-img" src={food1} alt="food" />

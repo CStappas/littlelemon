@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.booking-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+.booking-title {
+  all: unset;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.res-button {
+  padding: 20px 40px;
+  border-radius: 40px;
+  background-color: #f4ce14;
+  font-weight: 800;
+  border: none;
+  font-family: "Karla";
+  font-size: 18px;
+  transition: transform 0.3s;
+}
+.res-button:hover {
+  transform: translateY(-5px);
+}
+.form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form input,
+  .form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+  }
+  

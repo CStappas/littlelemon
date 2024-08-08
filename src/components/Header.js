@@ -1,8 +1,6 @@
 import React from "react";
-
 import Nav from "./Nav.js";
 import "../css/Header.css";
-import { useEffect, useState } from "react";
 
 const Header = () => {
   return (
