@@ -27,9 +27,9 @@ function Nav() {
 
   return (
     <nav className={`nav ${hidden ? "hidden" : ""}`} id="nav">
-      <div className="logo-container">
+      <HashLink to="/#header" className="logo-container">
         <img src={Logo} alt="Logo" className="logo" />
-      </div>
+      </HashLink>
 
       <ul className="nav-list">
         <li className="list-item">
@@ -47,9 +47,6 @@ function Nav() {
           <HashLink smooth to="/#section2">
             Order Online
           </HashLink>
-        </li>
-        <li className="list-item">
-          <Link to="">Login</Link>
         </li>
       </ul>
     </nav>
