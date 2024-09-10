@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/littlelemon/static/css/main.4c0db35b.css",
-    "main.js": "/littlelemon/static/js/main.6b40814a.js",
+    "main.js": "/littlelemon/static/js/main.385c2c91.js",
     "static/js/453.8dae57ee.chunk.js": "/littlelemon/static/js/453.8dae57ee.chunk.js",
     "static/media/Mario and Adrian A.jpg": "/littlelemon/static/media/Mario and Adrian A.7f44c6d6e341a27d14b3.jpg",
-    "static/media/bruchetta.svg": "/littlelemon/static/media/bruchetta.ec4950d4eabf4293f4120e3b6c48b7cf.svg",
+    "static/media/bruchetta.svg": "/littlelemon/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
     "static/media/greek salad.jpg": "/littlelemon/static/media/greek salad.bed423a1fab5b210e347.jpg",
     "static/media/restauranfood.jpg": "/littlelemon/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
     "static/media/restaurant.jpg": "/littlelemon/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
     "static/media/brucelee_cahalloffameinductee-1.png": "/littlelemon/static/media/brucelee_cahalloffameinductee-1.b9cca39f703e544db411.png",
     "static/media/connor.png": "/littlelemon/static/media/connor.11f81a044e0258b589c7.png",
     "static/media/john.jpg": "/littlelemon/static/media/john.8e2cc2379d1566f47349.jpg",
-    "static/media/Logo.svg": "/littlelemon/static/media/Logo.2c379c7ea7eb07402bfc7700915316de.svg",
-    "static/media/Logo .svg": "/littlelemon/static/media/Logo .fd87fc34e15316b670ea115ce700cd15.svg",
+    "static/media/Logo.svg": "/littlelemon/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "static/media/Logo .svg": "/littlelemon/static/media/Logo .f72c913c48c5334f78f2c336ec36f22b.svg",
     "static/media/steven-stamkos-2020-55.jpg": "/littlelemon/static/media/steven-stamkos-2020-55.5d698aa3a918646308f2.jpg",
     "index.html": "/littlelemon/index.html",
     "main.4c0db35b.css.map": "/littlelemon/static/css/main.4c0db35b.css.map",
-    "main.6b40814a.js.map": "/littlelemon/static/js/main.6b40814a.js.map",
+    "main.385c2c91.js.map": "/littlelemon/static/js/main.385c2c91.js.map",
     "453.8dae57ee.chunk.js.map": "/littlelemon/static/js/453.8dae57ee.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c0db35b.css",
-    "static/js/main.6b40814a.js"
+    "static/js/main.385c2c91.js"
   ]
 }
